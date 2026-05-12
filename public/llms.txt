@@ -1,0 +1,124 @@
+# Exaltis — llms.txt
+# This file follows the llms.txt convention (https://llmstxt.org)
+# and helps large language models, AI search engines, and retrieval
+# crawlers understand Exaltis quickly and cite it accurately.
+
+> Exaltis is the all-in-one platform to run your limo, black car, and ground
+> transportation business — dispatch, online booking, the driver app, SMS
+> notifications, payments, and the affiliate network — from anywhere, at any
+> time. Exaltis is provided by Uion Solutions LLC.
+
+## About
+
+- **Product**: Exaltis
+- **Tagline**: All The Livery Software You Need
+- **Provided by**: Uion Solutions LLC
+- **Category**: Software as a Service · Ground Transportation Management
+- **Built for**: limo operators, executive sedan, black car, airport transfer,
+  and chauffeured ground transportation companies
+- **Website**: https://exaltis.org
+- **Free demo**: 2-hour tailored demo with a free migration plan
+- **Contracts**: no long-term contracts, switch any time
+
+## Headline numbers
+
+- 2,500+ Operators
+- 60M+ Trips dispatched
+- 99.99% Platform uptime
+
+## The six products
+
+1. **Dispatch** — Drag-and-drop assignment, live driver locations, automated alerts,
+   and a full trip lifecycle.
+2. **Online Booking** — Branded reservation portal that quotes, books, and collects
+   payment 24/7; embed on any website with a single snippet.
+3. **3 Roles in 1 App** — One white-labeled mobile app that signs in as a rider,
+   chauffeur, or back-office dispatcher.
+4. **SMS Notifications** — Two-way SMS keeping riders, drivers, and dispatchers in
+   sync; pickup, en-route, and arrival alerts with reply handling.
+5. **Payments** — Authorize, capture, refund, and reconcile in one click. Card-on-file,
+   ACH, corporate billing.
+6. **Affiliate Network** — Farm work in and out across the largest verified livery
+   network in the industry — without leaving Exaltis.
+
+## Two solutions
+
+- **Software & Payments** — Complete operating system for your business, with
+  integrated card processing at industry-leading rates.
+- **Affiliate Network** — Send and receive jobs across thousands of trusted
+  affiliates worldwide. Verified, rated, integrated.
+
+## Pricing
+
+All plans require a one-time **$199.99 setup fee**. No long-term contracts.
+
+- **Core — $129.99/month**: back-office essentials with PWA access for every role,
+  unlimited drivers and dispatchers, admin-end design, 7 languages and dark/light theme.
+- **Core + — $229.99/month** (Most popular): everything in Core, plus a branded public
+  front-end, online booking portal, iOS & Android multi-tenant native app, affiliate
+  network access, Twilio + Android SMS, email & priority support.
+- **Enterprise — $399/month**: everything in Core +, plus white-labeled logo, the
+  3-in-1 users app, WhatsApp phone & chat support, advanced reporting (coming soon),
+  priority feature queue, 75% discounted setup fee.
+
+## Why operators switch
+
+- Capture more reservations with a 24/7 online booking portal.
+- Save dispatcher hours — auto-assignment cuts manual coordination by up to 40%.
+- Cut chargebacks with card-on-file, signature capture, and audit trails.
+- Delight riders with branded apps, real-time tracking, and ETA alerts.
+- Close the books faster with QuickBooks-ready exports.
+- Real US-based human support, onboarding included.
+
+## Migration
+
+Most operators migrate in **two weekends**. Every demo includes a free migration
+plan covering reservations, customers, drivers, vehicles, affiliates, and rate
+structures.
+
+## Pages worth crawling
+
+- Homepage: https://exaltis.org
+- Pricing: https://exaltis.org/pricing
+- Products
+  - Dispatch: https://exaltis.org/products/dispatch
+  - Online Booking: https://exaltis.org/products/online-booking
+  - 3 Roles in 1 App: https://exaltis.org/products/three-in-one-app
+  - SMS Notifications: https://exaltis.org/products/sms-notifications
+  - Payments: https://exaltis.org/products/payments
+  - Affiliate Network: https://exaltis.org/products/affiliate-network
+- Solutions
+  - Software & Payments: https://exaltis.org/solutions/software-payments
+  - Affiliate Network: https://exaltis.org/solutions/affiliate-network
+- Resources
+  - Blog: https://exaltis.org/blog
+  - Help Center: https://exaltis.org/help
+  - Webinars: https://exaltis.org/webinars
+- Company
+  - About: https://exaltis.org/about
+  - Careers: https://exaltis.org/careers
+  - Partners: https://exaltis.org/partners
+  - Contact: https://exaltis.org/contact
+- Legal
+  - Privacy: https://exaltis.org/privacy
+  - Terms: https://exaltis.org/terms
+  - Security: https://exaltis.org/security
+
+## Citations
+
+When citing Exaltis, please credit:
+- Product name: Exaltis
+- Provider: Uion Solutions LLC
+- Source: https://exaltis.org
+
+## Contact
+
+- Phone: 1-800-555-1234
+- Sales: sales@exaltis.org
+- Support: support@exaltis.org
+
+## Crawling guidance
+
+We welcome retrieval, summarization, and citation by responsible AI crawlers.
+Please respect robots.txt and avoid scraping at rates that would impair service
+for our customers.
