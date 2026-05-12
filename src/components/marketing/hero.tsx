@@ -1,11 +1,6 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  Play,
-  Phone,
-  MapPin,
-  Plane,
-} from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Play } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { HEADLINE_STATS } from "@/data/testimonials";
@@ -20,7 +15,7 @@ export function Hero() {
       </div>
 
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1.15fr]">
           <div>
             <span className="eyebrow">
               <span className="h-1.5 w-1.5 rounded-full bg-primary-500" />
@@ -61,92 +56,73 @@ export function Hero() {
             </div>
           </div>
 
-          <DispatchPeek />
+          <AdminPortalScreenshot />
         </div>
       </Container>
     </section>
   );
 }
 
-function DispatchPeek() {
+function AdminPortalScreenshot() {
   return (
     <div className="relative">
-      <div className="absolute -inset-10 -z-10 rounded-[40px] bg-gradient-to-br from-primary-500/20 via-fuchsia-500/10 to-cyan-500/15 blur-3xl" />
+      {/* glow */}
+      <div className="absolute -inset-10 -z-10 rounded-[44px] bg-gradient-to-br from-primary-500/25 via-fuchsia-500/15 to-cyan-500/20 blur-3xl" />
 
-      {/* Dispatcher window */}
-      <div className="rounded-3xl border border-slate-200/80 dark:border-white/10 bg-slate-950 text-white shadow-[0_30px_100px_-30px_rgba(15,23,42,0.5)] overflow-hidden">
-        <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
-          <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
-          <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/80" />
-          <span className="h-2.5 w-2.5 rounded-full bg-green-500/80" />
-          <div className="ml-4 flex items-center gap-2 rounded-md bg-white/5 px-3 py-1 text-xs text-white/70">
-            exaltis.org / dispatch
+      {/* browser chrome wrapper */}
+      <div className="relative rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white dark:bg-slate-950 shadow-[0_30px_100px_-30px_rgba(15,23,42,0.45)] overflow-hidden">
+        {/* fake browser bar */}
+        <div className="flex items-center gap-2 border-b border-slate-200/80 dark:border-white/10 bg-slate-50/80 dark:bg-slate-900/80 px-4 py-2.5">
+          <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
+          <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
+          <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
+          <div className="ml-4 hidden sm:flex items-center gap-2 rounded-md bg-white dark:bg-slate-950 px-3 py-1 text-[11px] text-muted-foreground border border-slate-200/80 dark:border-white/10">
+            app.exaltis.org / admin
           </div>
-          <div className="ml-auto flex items-center gap-2 text-[11px] text-white/60">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Live trip
+          <div className="ml-auto inline-flex items-center gap-1.5 text-[11px] text-muted-foreground">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            Live
           </div>
         </div>
 
-        <div className="p-5">
-          {/* Trip detail card matching exaltis.org hero hint */}
-          <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-            <div className="flex items-center justify-between text-[11px] uppercase tracking-wider text-white/50">
-              <span className="font-mono">RES-10421</span>
-              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 px-2 py-0.5 text-emerald-300">
-                <span className="h-1 w-1 rounded-full bg-emerald-400" /> ETA 23 min
-              </span>
-            </div>
-            <div className="mt-3 text-base font-semibold">
-              JFK Airport → Midtown · The Mark
-            </div>
-            <div className="mt-1 text-sm text-white/60">
-              Wed 7:00 AM · Acme Travel · 2 pax · SUV
-            </div>
+        {/* screenshot */}
+        <Image
+          src="/screenshots/admin-portal.png"
+          alt="Exaltis Admin Portal — Bookings Management dashboard"
+          width={2558}
+          height={1400}
+          priority
+          sizes="(max-width: 1024px) 100vw, 56vw"
+          className="block h-auto w-full"
+        />
+      </div>
 
-            <ul className="mt-4 space-y-2 text-[12px]">
-              <li className="flex items-center gap-2 text-white/80">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-primary-500/20 text-primary-300">
-                  <MapPin className="h-3 w-3" />
-                </span>
-                Pickup · JFK T4 · curb 2A
-              </li>
-              <li className="flex items-center gap-2 text-white/80">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-cyan-500/20 text-cyan-300">
-                  <Plane className="h-3 w-3" />
-                </span>
-                Flight DL402 · landed 06:34 · gate B22
-              </li>
-              <li className="flex items-center gap-2 text-white/80">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-violet-500/20 text-violet-300">
-                  <Phone className="h-3 w-3" />
-                </span>
-                Driver · M. Reyes · 4.97★
-              </li>
-            </ul>
+      {/* floating KPI pill */}
+      <div className="absolute -bottom-5 left-6 hidden rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white dark:bg-slate-950 px-4 py-3 shadow-xl sm:flex items-center gap-3">
+        <span className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-500/15 text-emerald-600">
+          <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M4 12l5 5L20 6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+        <div>
+          <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            On-time today
           </div>
+          <div className="text-sm font-semibold">99.2%</div>
+        </div>
+      </div>
 
-          {/* Mini status board */}
-          <div className="mt-4 grid grid-cols-5 gap-2 text-[10px] uppercase tracking-wider text-white/60">
-            {[
-              { l: "Unassigned", n: 2, c: "bg-amber-400" },
-              { l: "Dispatched", n: 6, c: "bg-primary-400" },
-              { l: "En route", n: 4, c: "bg-cyan-400" },
-              { l: "POB", n: 3, c: "bg-violet-400" },
-              { l: "Closed", n: 8, c: "bg-emerald-400" },
-            ].map((s) => (
-              <div
-                key={s.l}
-                className="rounded-lg border border-white/10 bg-white/[0.03] p-2"
-              >
-                <div className="flex items-center gap-1.5">
-                  <span className={`h-1.5 w-1.5 rounded-full ${s.c}`} />
-                  <span>{s.l}</span>
-                </div>
-                <div className="mt-1 text-base font-semibold text-white">{s.n}</div>
-              </div>
-            ))}
+      <div className="absolute -top-5 right-6 hidden rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white dark:bg-slate-950 px-4 py-3 shadow-xl sm:flex items-center gap-3">
+        <span className="grid h-9 w-9 place-items-center rounded-xl bg-primary-500/15 text-primary-600">
+          <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M3 12h4l3-9 4 18 3-9h4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+        <div>
+          <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
+            Trips dispatched today
           </div>
+          <div className="text-sm font-semibold">412</div>
         </div>
       </div>
     </div>
